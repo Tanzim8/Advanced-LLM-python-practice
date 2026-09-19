@@ -76,3 +76,80 @@ print(np.var(grades))
 print(np.min(grades))
 print(np.max(grades))
 print(np.sum(grades))
+
+#2D array statistics
+
+print(np.mean(collectedGrades))
+
+#using axis to find average for each student
+print(np.mean(collectedGrades, axis = 1))
+
+#now average grade in each course
+print(np.mean(collectedGrades, axis = 0))
+
+
+#Boolean filtering
+
+print(grades > 70)
+
+#filtering dataset
+print(grades[grades>70])
+
+#changing values
+
+scores = np.array([45, 65, 94, 33, 81])
+
+scores[scores< 50] = 50
+
+print(scores)
+
+#reshaping arrays
+
+numbers = np.array([1, 2, 3, 4, 5, 6])
+
+print("The shape before reshape: ", numbers.shape)
+
+matrix = numbers.reshape(2,3)
+
+print("After reshape", matrix)
+
+#Transposing
+
+data = np.array([
+    [1,2,3],
+    [4,5,6]
+])
+print("Before transposing: ", data)
+print("After transposing: ", data.T)
+
+#special array
+
+specialNumber = np.arange(1,13)
+print("before aranging: ", specialNumber)
+specialMatrix = specialNumber.reshape(3,4)
+print("After aranging: ",specialMatrix)
+
+
+#Random numbers
+
+rng = np.random.default_rng()
+
+randomNumbers = rng.integers(1,101, size= 10)
+
+print(randomNumbers)
+
+RandomGrades = rng.integers(50, 101, size=(20,5))
+print(RandomGrades)
+
+#matrix multiplication
+A = np.array([
+    [1,2],
+    [3,4]
+])
+
+B = np.array([
+    [5,6],
+    [7,8]
+])
+
+print(np.matmul(A,B))
