@@ -54,3 +54,9 @@ print(students.iloc[2])
 
 #This gets the first 3 students
 print(students.iloc[0:3])
+
+#Adding new column
+students["Average"]=students[
+    ["Python", "Math", "English"]
+].mean(axis=1)
+print(students)
