@@ -27,10 +27,10 @@ print(data[data["accuracy"]>85])
 
 print(data[
     (data["accuracy"] > 85) & 
-    (data["response_time"]>3.0)
+    (data["response_time"]<3.0)
     ])
 
-print("All the halluciated response: ", data["hallucinated"])
+print("All the halluciated response: ", data[(data["hallucinated"] == True)] )
 
 print(data[
       (data["model"]=="GPT") &
@@ -58,3 +58,16 @@ print(data)
 
 data["Passed"] = data["accuracy"]>=85
 print(data)
+
+mistral_performence = 91/2.8
+mistral_passed = 91 >=85
+data.loc[len(data)] = ["Mistral", "Coding", 2.8, 91, 350, False, mistral_performence, mistral_passed]
+print(data)
+
+#GroupBy for average
+
+print(data.groupby("model")["response_time"].mean())
+
+# print(data.dtypes)
+
+print(data.iloc[data["performence"].idxmax()])
