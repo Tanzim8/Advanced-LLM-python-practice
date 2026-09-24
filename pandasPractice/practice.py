@@ -60,3 +60,10 @@ students["Average"]=students[
     ["Python", "Math", "English"]
 ].mean(axis=1)
 print(students)
+
+#Adding new row
+students.loc[len(students)]= ["Hasan", 80, 85, 90, 85]
+
+print(students)
+print(students.columns)
+print(len(students.columns))
