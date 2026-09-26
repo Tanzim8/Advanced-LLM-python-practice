@@ -12,6 +12,18 @@ plt.savefig("Model_accuracy.png")
 
 plt.show()
 
+#Final Challenge
+
+print(data[["response_time","accuracy"]])
+plt.scatter(data["response_time"],data["accuracy"])
+plt.title("Response time vs Accuracy")
+plt.xlabel("Response_time")
+plt.ylabel("Accuracy")
+
+plt.savefig("ResponseVsAccuracy.png")
+
+plt.show()
+
 
 # students = ["Tanzim", " Alex", "Maria", "Hasan"]
 # grades = [82, 91, 87, 85]
