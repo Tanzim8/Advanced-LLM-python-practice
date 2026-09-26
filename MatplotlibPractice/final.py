@@ -85,10 +85,10 @@ plt.close()
 # 1. GPT
 # 2. GPT
 # 3. negatve, a clear pattern is the lesser the response time is the higher the accuracy is
-# 4. positive and from the highest point it satrts dropping, The general pattern is the more tokens are used the better the accuracy is untill a point when the accuracy reaches the top and than more tokens are used but the accuracy starts falling down
-# 5. Bar chart easily represnets the average accuracy and the lower the bar chart is the better the model is
-# 6. The histogram tells us all the models had 
+# 4. unclear and from the highest point it satrts dropping, The general pattern is the more tokens are used the better the accuracy is untill a point when the accuracy reaches the top and than more tokens are used but the accuracy starts falling down
+# 5. Bar chart easily represnets the average accuracy and the taller the bar chart is the better the model is
+# 6. The histogram tells us all the models had x axis shoes response tme and its ranges, y-axis shows how many experiment fall within each range, bins are the ranges used to group response time value
 # 7. The scatter plot helps us investigate how the each models accuracy was when reponse time got bigger
 # 8. The line graph helps us invertihate how the accuracy raised and dropped for each experiment, it can be more useful in stock market anlysis, business analysis etc.
-# 9. according to the plot yes, as from the plot the highest accuracy was achieved in the lowest response time
+# 9. according to the plot NO, as from the plot Higher response times are associated with lower accuracy in this dataset, but it does not fully supports the claim, there are other factors that makes a model work so reponse time can't be the only factor
 
