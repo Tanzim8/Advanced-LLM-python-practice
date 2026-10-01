@@ -44,4 +44,9 @@ print(Corr)
 Corr1 = data["accuracy"].corr(data["tokens"])
 print(Corr1)
 
+#Z-socre
+for acc in accuracy:
+    z = (acc-Mean)/SD
+    print(z)
+
 
