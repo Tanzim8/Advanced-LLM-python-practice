@@ -1,0 +1,16 @@
+model,prompt_type,response_time,accuracy,tokens,hallucinated
+GPT,Reasoning,2.4,92,340,False
+Llama,Coding,3.1,85,410,False
+Gemma,Creative,2.8,78,290,True
+GPT,Coding,2.1,95,380,False
+Llama,Reasoning,3.5,82,450,True
+Gemma,Coding,2.6,88,310,False
+GPT,Creative,2.3,90,360,False
+Llama,Creative,3.0,87,395,False
+Gemma,Reasoning,2.9,75,275,True
+GPT,Reasoning,2.0,97,420,False
+Llama,Coding,3.3,80,430,True
+Gemma,Creative,2.7,84,305,False
+GPT,Coding,2.2,94,390,False
+Llama,Reasoning,3.2,86,415,False
+Gemma,Coding,2.5,89,325,False
