@@ -38,3 +38,18 @@ print("Actual scores: ", y_test.values)
 mae = mean_absolute_error(y_test, predictions)
 
 print("MAE: ", mae)
+
+#Coefficient
+print("Coefficient: ", model.coef_)
+#intercept
+print("Intercept: ", model.intercept_)
+
+#Linear Regression y = coefficient*x + intercept
+
+#For 6 hours studied the linear regression would be 
+res = model.coef_*6 + model.intercept_
+print("Linear regression for 6 hours: ", res)
+
+#for 12 hours: Reults in Extrapolation(prediction out of range) 
+resTwelve = model.coef_*12 + model.intercept_
+print("For twelve hours: ", resTwelve)
